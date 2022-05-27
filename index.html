@@ -16,13 +16,39 @@
       crossorigin="anonymous"
     />
 
+    <style>
+      #resultado {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 2rem;
+        font-size: xx-large;
+        font-weight: bold;
+      }
+    </style>
+
     <title>Clase JavaScript 3</title>
   </head>
   <body>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <div class="container">
       <div class="jumbotron">
-        <button class="btn btn-lg btn-primary">Sumar</button>
-        <button class="btn btn-lg btn-primary">Restar</button>
+        <br />
+        <button onclick="sumar()" class="btn btn-lg btn-primary btn-block">
+          Sumar
+        </button>
+        <button onclick="restar()" class="btn btn-lg btn-primary btn-block">
+          Restar
+        </button>
+        <button
+          onclick="multiplicar()"
+          class="btn btn-lg btn-primary btn-block"
+        >
+          Multiplicar
+        </button>
+        <button onclick="dividir()" class="btn btn-lg btn-primary btn-block">
+          Dividir
+        </button>
 
         <div id="resultado"></div>
       </div>
